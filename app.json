@@ -1,0 +1,23 @@
+{
+  "name": "Heroku-JB-test",
+  "description": "app.json file",
+  "scripts": {
+  },
+  "env": {
+    "DATABASE_URL": "postgres://esrmqglwgbpxce:9adfad66621fb242f90df49b252be67ee354190db893003222847d437f51e458@ec2-54-225-89-195.compute-1.amazonaws.com:5432/de5i80ciub5lu4"
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "stack": "heroku-18",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
